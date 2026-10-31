@@ -22,4 +22,9 @@ public class Vezba3 {
         System.out.println("Method Four");
     }
 
+    @Test(dependsOnMethods = {"methodFour"},alwaysRun = true)
+    public void methodFive(){
+        System.out.println("Method Four");
+    }
+
 }
